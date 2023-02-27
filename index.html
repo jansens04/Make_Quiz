@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="quiz-box">
+        <div class="quiz-header">
+            <span id="skor">Skor : 0</span>
+            <span id="countdown">0</span>
+        </div>
+        <div class="quiz-body" onload="play()">
+            <div class="quiz-set active">
+                <h4>1. Siapa Presiden Pertama Indonesia</h4>
+                <div class="quiz-row">
+                    <input type="radio" name="a1">
+                    <span>Jokowi</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a1">
+                    <span>Habibie</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a1" valid="valid">
+                    <span>Soekarno</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a1">
+                    <span>Megawati</span>
+                </div>
+            </div>
+            <div class="quiz-set ">
+                <h4>2. Apa yang dimaksud dengan TKJ</h4>
+                <div class="quiz-row">
+                    <input type="radio" name="a2">
+                    <span>Teknik Komputer Lunak</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a2">
+                    <span>Software</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a2" valid="valid">
+                    <span>Teknik Komputer Jaringan</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a2">
+                    <span>Teknik Kendaraan Ringan</span>
+                </div>
+            </div>
+            <div class="quiz-set ">
+                <h4>3.fungsi tag heading dalam HTML </h4>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Mengatur Jarak pada tulisan</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>Mengatur Ukuran pada Tulisan</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Mengatur Lebar pada Tulisan</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Membuat Tulisan</span>
+                </div>
+            </div>
+            <div class="quiz-set ">
+                <h4>4. Apa itu Artificial Inteligence </h4>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Mobil</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Seorang Guru</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>Seorang Software</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>Sebuah Kecerdasan Buatan</span>
+                </div>
+            </div>
+            <div class="quiz-set">
+                <h4>5. Cara menghubungkan ke file JS </h4>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>style.css</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3" valid="valid">
+                    <span>script.js</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>index.html</span>
+                </div>
+                <div class="quiz-row">
+                    <input type="radio" name="a3">
+                    <span>index.php</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-set ">
+            <h4 class="quiz-score">Your total score <span id="totalScore">0 | </span> out of 100</h4>
+        </div>
+        <div class="quiz-footer">
+            <span class="btn1" id="skip">Skip</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
